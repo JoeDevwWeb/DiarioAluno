@@ -13,5 +13,22 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-
 // Autenticação Login
+
+// function signUpWithEmailPassword() {
+//   var email = "test@example.com";
+//   var password = "hunter2";
+
+// firebase.auth().createUserWithEmailAndPassword(email, password)
+//   .then((userCredential) => {
+//     // Signed in
+//     var user = userCredential.user;
+//     // ...
+//   })
+//   .catch((error) => {
+//     var errorCode = error.code;
+//     var errorMessage = error.message;
+//     // ..
+//   });
+// }
+
