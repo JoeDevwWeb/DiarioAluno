@@ -1,0 +1,109 @@
+.publicacoes{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.main .noticias{
+    width: 500px;
+    height: 500px;
+    background: hsl(195, 59%, 38%);
+}
+.extra{
+    width: 30rem;
+    height: 20rem;
+    background: silver;
+}
+.post{
+    width: 30rem;
+    height: 10rem;
+    background: black;
+}
+
+.main img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* area de texto */
+
+.editorTexto{
+    width: 30rem;
+    height: 10rem;
+    background: whitesmoke;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editorTexto p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#postagem{
+    width: 100%;
+    height: 7rem;
+    resize: none;
+}
+
+/* noticias */
+.mainNoticias{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+hr{
+    width: 50rem;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projeto{
+    display: flex;
+    align-items: center;
+}
+
+.projeto img{
+    width: 12rem;
+    height: 12rem;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 120px;
+    margin-top: 30px;
+    background: gray;
+}
+
+@media (max-width: 800px) {
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+hr{
+    width: 30rem;
+}
+
+}

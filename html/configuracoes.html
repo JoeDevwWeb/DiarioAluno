@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/f6748ef481.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/raiz.css">
+    <link rel="stylesheet" href="../css/config.css">
+    <title>Home</title>
+</head>
+<body>
+    
+    <header class="header">
+        
+        <div class="barra">
+            <!-- Botão de Ferramentas -->
+        <div class="btnFerramentas">
+            <i id="btnOpen" class="fa-solid fa-bars"></i>
+        </div>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="/">
+            <img id="logo" src="../imagens/logo.png" alt="logo do site">
+            <p>Diário do Aluno</p>
+            </a>
+        </div>
+      </div>
+    </header>
+
+     <!-- Barra de ferramentas -->
+     <aside class="barraferramentas">
+        <div class="btnFerramentas">
+            <i id="btnClose" class="fa-solid fa-close"></i>
+        </div>
+        <div class="perfil">
+            <img id="perfil" src="../imagens/perfil.jpg" alt="foto do perfil">
+        </div>
+        <ul>
+          <li><a href="/">
+              <i class="fa-solid fa-house"></i>
+              Início</a></li>
+
+          <li><a href="../html/guia.html">
+              <i class="fa-solid fa-circle-info"></i>
+              Guia</a></li>
+
+          <li><a href="../html/projetos.html">
+              <i class="fa-solid fa-award"></i>
+              Projetos</a></li>
+              
+          <li><a href="../html/configuracoes.html">
+              <i class="fa-solid fa-gear"></i>
+              Configurações</a></li>
+        </ul>
+      </aside> 
+      <main class="mainConfig">
+          <hr>
+            <div class="perfilConfig">
+                <div>
+                    <img id="imgConfig" src="../imagens/perfil.jpg" alt="foto do perfil">
+                </div>
+                <div class="dadosPerfil">
+                    <label>Usúario</label>
+                    <input type="text" required placeholder="Juliano">
+
+                    <label>Email</label>
+                    <input type="email" required placeholder="juliano@gmail.com">
+
+                    <label>Senha</label>
+                    <input type="password" required placeholder="************">
+
+                    <label><i class="fa-solid fa-pencil"></i></label>
+                </div>
+            </div>
+            <hr>
+      </main>
+      <script src="../script/script.js"></script>
+ </body>
+</html>

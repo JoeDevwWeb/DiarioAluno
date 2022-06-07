@@ -1,0 +1,15 @@
+.ex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.project{
+    width: 30rem;
+    height: 30rem;
+    background: #90cadd;
+}

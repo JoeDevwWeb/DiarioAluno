@@ -1,0 +1,45 @@
+/* Configurações de perfil */
+.mainConfig{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 30px;
+}
+.perfilConfig{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dadosPerfil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.dadosPerfil i{
+    margin-left: 140px;
+}
+
+.dadosPerfil input{
+    width: 12rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.1px solid black;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+.perfilConfig #imgConfig{
+    width: 12rem;
+    border-radius: 50%;
+}
