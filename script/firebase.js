@@ -1,22 +1,17 @@
 
 // Inicialização
 
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from "firebase/analytics";
-
 const firebaseConfig = {
-  apiKey: "AIzaSyAy95ksls8xafdJumx4cAbbYF8ly-LGs-o",
-  authDomain: "diarioaluno-e6c41.firebaseapp.com",
-  databaseURL: "https://diarioaluno-e6c41-default-rtdb.firebaseio.com",
-  projectId: "diarioaluno-e6c41",
-  storageBucket: "diarioaluno-e6c41.appspot.com",
-  messagingSenderId: "843870025665",
-  appId: "1:843870025665:web:b78bcd13657d1ca4d7a140",
-  measurementId: "G-7YN240WTPZ"
-
+  apiKey: "AIzaSyAAGqIkpR4nVkdoxgsCDpxYFutEJ0O_mOY",
+  authDomain: "diariodoaluno-d32c8.firebaseapp.com",
+  projectId: "diariodoaluno-d32c8",
+  storageBucket: "diariodoaluno-d32c8.appspot.com",
+  messagingSenderId: "843419785955",
+  appId: "1:843419785955:web:2fb0903f48c83661a5c3d6"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
 
 // Autenticação Login
