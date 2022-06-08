@@ -1,6 +1,4 @@
 
-
-
 // Botao do sidebar
 $(document).ready(function(){
     
