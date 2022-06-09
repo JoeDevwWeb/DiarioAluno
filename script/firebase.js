@@ -29,7 +29,8 @@
   
   const singUp = document.getElementById('formulario');
   
-  singUp.onsubmit = event => {
+  singUp.onsubmit = (event) => {
+    event.preventDefault()
  
    const email = singUp.querySelector('[name=email]').value; 
    const senha = singUp.querySelector('[name=password]').value;
@@ -41,31 +42,31 @@
       console.log(error);
     });
 
-    event.preventDefault()
+
  };
 
 
 
 //  Logar
 
-const singIn = document.getElementById('formulario-Entrar');
+// const singIn = document.getElementById('formulario-Entrar');
 
-singIn.onsubmit = event => {
+// singIn.onsubmit = (event) => {
+//   event.preventDefault()
  
-  const email = singIn.querySelector('[name=email]').value; 
-  const senha = singIn.querySelector('[name=password]').value;
+//   const email = singIn.querySelector('[name=email]').value; 
+//   const senha = singIn.querySelector('[name=password]').value;
 
-  firebase.auth().singInWithEmailAndPassword(email, senha)
-    .then(() => {
-      window.location.href = "../index.html";
-    })
-    .catch((error) => {
-      if (error.code == 'auth/wrong-password' || error.code == "auth/user-not-found"){
-        alert('E-mail ou senha inválidos');
-        return;
-      }
-      alert('Nao foi possivel efetuar')
-    })
+//   firebase.auth().singInWithEmailAndPassword(email, senha)
+//     .then(() => {
+//       window.location.href = "../index.html";
+//     })
+//     .catch((error) => {
+//       if (error.code == 'auth/wrong-password' || error.code == "auth/user-not-found"){
+//         alert('E-mail ou senha inválidos');
+//         return;
+//       }
+//       alert('Nao foi possivel efetuar')
+//     })
 
-   event.preventDefault()
-};
+// };
