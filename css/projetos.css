@@ -1,7 +1,7 @@
 .ex{
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 800px;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -9,7 +9,12 @@
 
 
 .project{
-    width: 30rem;
-    height: 30rem;
     background: #90cadd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project img{
+    width: 40rem;
+    height: 30rem;
 }

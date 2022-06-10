@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 .texto{
     display: flex;
@@ -13,28 +14,51 @@
     gap: 20px;
 }
 
-
-.noticias img {
+.projetos{
+    background: white;
+    border: 0.2px solid transparent;
+}
+.projetos:hover{
+    border: 0.2px solid black;
+}
+.projetos img {
     max-width: 500px;
     max-height: 500px;
     object-fit: cover;
-    border: 0.2px solid black;
 }
-.noticias p{
-    position: relative;
-    top: -70px;
+.projetos p{
     padding-left: 10px;
+    padding-bottom: 10px;
 }
-.noticias p:nth-child(2){
+.projetos p:nth-child(2){
     font-size: 30px;
 }
 
-
-.extra{
+/* Comentario do estagio */
+.estagio{
     width: 30rem;
-    height: 20rem;
-    background: silver;
+    height: 18rem;
+    background: rgba(211, 210, 210, 0.836);
+    display: flex;
+    flex-direction: column;
 }
+.tituloPost{
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tituloPost h2{
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+.textoEstagio p{
+    padding: 2%;
+    text-align: justify;
+}
+
+
 .post{
     width: 30rem;
     height: 10rem;
@@ -48,11 +72,6 @@
 }
 
 /* area de texto */
-.estagio{
-    width: 30rem;
-    height: 10rem;
-    background: seashell;
-}
 .editorTexto{
     width: 30rem;
     height: 10rem;
@@ -75,33 +94,33 @@
     resize: none;
 }
 
+
 /* noticias */
 .mainNoticias{
     display: flex;
     height: 100%;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 hr{
     width: 50rem;
 }
 
-.projetos{
+.postagens{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 .projeto{
     display: flex;
+    width: 100%;
     align-items: center;
 }
 
 .projeto img{
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
 }
 /* footer */
 footer{
@@ -111,9 +130,11 @@ footer{
     background: gray;
 }
 
+
+
 @media (max-width: 800px) {
 
-.projetos{
+.postagens{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +142,10 @@ footer{
 }
 hr{
     width: 30rem;
+}
+.projeto img{
+    width: 8rem;
+    height: 7rem;
 }
 
 }
