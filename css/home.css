@@ -12,11 +12,24 @@
     align-items: center;
     gap: 20px;
 }
-.main .noticias{
-    width: 500px;
-    height: 500px;
-    background: hsl(195, 59%, 38%);
+
+
+.noticias img {
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    border: 0.2px solid black;
 }
+.noticias p{
+    position: relative;
+    top: -70px;
+    padding-left: 10px;
+}
+.noticias p:nth-child(2){
+    font-size: 30px;
+}
+
+
 .extra{
     width: 30rem;
     height: 20rem;
@@ -35,7 +48,11 @@
 }
 
 /* area de texto */
-
+.estagio{
+    width: 30rem;
+    height: 10rem;
+    background: seashell;
+}
 .editorTexto{
     width: 30rem;
     height: 10rem;
