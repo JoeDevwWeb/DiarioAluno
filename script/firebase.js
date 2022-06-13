@@ -56,22 +56,6 @@
 
 
 
-  
-//    firebase.auth().signInWithEmailAndPassword(auth, email, password)
-//      .then((userCredential) => {
-//        // Signed in
-//        var user = userCredential.user;
-//        console.log("ok");
-//        // ...
-//      })
-//      .catch((error) => {
-//        var errorCode = error.code;
-//        var errorMessage = error.message;
-//        console.log("Deu luara");
-//      });
-//      // [END auth_signin_password]
-//      
-//      event.preventDefault()
  };
 
   
@@ -80,19 +64,5 @@
 
 
 
-// function signUpWithEmailPassword() {
-//   var email = "test@example.com";
-//   var password = "hunter2";
-
-// firebase.auth().createUserWithEmailAndPassword(email, password)
-//   .then((userCredential) => {
-//     // Signed in
-//     var user = userCredential.user;
-//     // ...
-//   })
-//   .catch((error) => {
-//     var errorCode = error.code;
-//     var errorMessage = error.message;
-//     // ..
 //   });
 // }
