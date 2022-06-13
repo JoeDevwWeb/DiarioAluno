@@ -17,7 +17,7 @@
             <img src="../imagens/logo.png" alt="Foto da logo">
         </div>
         
-        <form id="formulario">
+        <form>
 
             <label>Email</label>
             <input type="email" id="email" name="email">
@@ -26,19 +26,17 @@
             <label>Senha</label>
             <input type="password" id="password" name="password">
             
-            <input type="submit" id="NovaConta" value="Enviar">
+            <button type="button" onclick = "login()" >Entrar</button>
         </form>
 
     </div>
 
 </div>
 
-    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
-    
+    <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
     <script defer src="../script/firebase.js"></script>
-    
+    <script defer src="../script/auth.js"></script>
     
     
 </body>

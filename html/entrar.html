@@ -18,30 +18,15 @@
             <label>Senha</label>
             <input type="password" id="password" name="password">
             
-            <input type="submit" id="login" value="Enviar">
+            <button type="button" onclick = "registrar()" >Entrar</button>
         </form>
     
     </div>
     
-        <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-        <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-        <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
-        
-        <script>
-            // Inicialização
-            const firebaseConfig = {
-                apiKey: "AIzaSyAAGqIkpR4nVkdoxgsCDpxYFutEJ0O_mOY",
-                authDomain: "diariodoaluno-d32c8.firebaseapp.com",
-                projectId: "diariodoaluno-d32c8",
-                storageBucket: "diariodoaluno-d32c8.appspot.com",
-                messagingSenderId: "843419785955",
-                appId: "1:843419785955:web:2fb0903f48c83661a5c3d6"
-            };
-            
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-        </script>
+        <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
         <script defer src="../script/firebase.js"></script>
+        <script defer src="../script/auth.js"></script>
         
 </body>
 </html>
