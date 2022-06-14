@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Scripts -->
-    <script src="https://kit.fontawesome.com/f6748ef481.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
-    
+  
     <!-- Css -->
     <link rel="stylesheet" href="./css/raiz.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -20,48 +15,60 @@
     <header class="header">
         
         <div class="barra">
-            <!-- Botão de Ferramentas -->
-        <div class="btnFerramentas">
+          
+        <!-- Botão -->
+         <div class="btnFerramentas">
             <i id="btnOpen" class="fa-solid fa-bars"></i>
-        </div>
+         </div>
+         
         <!-- Logo -->
-        <div class="logo">
-            <a href="/">
+        <div class="logo"><a href="/">
             <img id="logo" src="./imagens/logo.png" alt="logo do site">
             <p>Diário do Aluno</p>
-            </a>
+        </a></div>
+          
         </div>
-        </div>
+        
+      
         <!-- Barra de busca -->
-       <div class="busca">
+        <div class="busca">
             <input type="text" name="busca" id="barraPesquisa">
             <i class="fa-solid fa-magnifying-glass"></i>
        </div>
+       
     </header>
 
-     <!-- Barra de ferramentas -->
-     <aside class="barraferramentas">
-        <div class="btnFerramentas">
-            <i id="btnClose" class="fa-solid fa-close"></i>
-        </div>
-        <div class="perfil">
-            <img id="perfil" src="./imagens/perfil.jpg" alt="foto do perfil">
-        </div>
-        <ul>
-          <li><a href="/">
-              <i class="fa-solid fa-house"></i>
-              Início</a></li>
-          <li><a href="./html/projetos.html">
-              <i class="fa-solid fa-award"></i>
-              Projetos</a></li>
-          <li><a href="./html/guia.html">
-              <i class="fa-solid fa-circle-info"></i>
-              Guia</a></li>
-          <li><a href="./html/configuracoes.html">
-              <i class="fa-solid fa-gear"></i>
-              Configurações</a></li>
-        </ul>
-      </aside>
+     
+<!-- Barra de ferramentas -->
+<aside class="barraferramentas">
+
+    <div class="btnFerramentas">
+        <i id="btnClose" class="fa-solid fa-close"></i>
+    </div>
+    <div class="perfil">
+        <img id="perfil" src="./imagens/perfil.jpg" alt="foto do perfil">
+        <p id="userName">@Jonas976</p>
+    </div>
+    <ul>
+      <li><a href="/">
+          <i class="fa-solid fa-house"></i>
+          Início</a></li>
+      <li><a href="./html/projetos.html">
+          <i class="fa-solid fa-award"></i>
+          Projetos</a></li>
+      <li><a href="./html/guia.html">
+          <i class="fa-solid fa-circle-info"></i>
+          Guia</a></li>
+      <li><a href="./html/configuracoes.html">
+          <i class="fa-solid fa-gear"></i>
+          Configurações</a></li>
+    </ul>
+     <!-- Botao de deslogar a conta -->
+     <div id="deslogar" onclick="logout()">
+         <i class="fa-solid fa-arrow-right-from-bracket"></i>
+     </div>
+     
+  </aside>
 
       <!-- Conteudo Principal -->
       <main class="main">
@@ -139,18 +146,16 @@
       </main>      
         
         <!-- Footer -->
-        <footer>
+        <footer></footer>
 
-            <button type="button" id="Odio" onclick="logout()">Sair</button>
-
-        </footer>
-
-        <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
-        <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-        <script defer src="./script/firebase.js"></script>
-        <script defer src="./script/guarda.js"></script>
-
-    <script src="./script/script.js"></script>1
-    
  </body>
+   <!-- Scripts -->
+   <script src="https://kit.fontawesome.com/f6748ef481.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+   <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+   <script defer src="./script/firebase.js"></script>
+   <script src="./script/script.js"></script>
+   <script defer src="./script/guarda.js"></script>
+
 </html>

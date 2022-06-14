@@ -1,9 +1,11 @@
-.areaCadrastro{
-    background: skyblue;
+.centalizar{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.areaCadrastro{
+    display: flex;
+    flex-direction: column;
 }
 
 #formulario{

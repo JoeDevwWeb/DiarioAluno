@@ -1,4 +1,3 @@
-
 // Botao do sidebar
 $(document).ready(function(){
     
@@ -7,6 +6,5 @@ $(document).ready(function(){
     });
     $('#btnClose').click(function(){
         $('.barraferramentas').css("left","-240px");
-});
-});
-
+  });
+  });

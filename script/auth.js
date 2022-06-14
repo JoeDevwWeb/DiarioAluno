@@ -22,7 +22,7 @@ firebase.auth().createUserWithEmailAndPassword(email, senha)
 .then(() => {
   window.location.href = "../index.html";
 }).catch((error) => {
-  console.log(error);
+  alert("Não foi possivel efetuar", error);
 });
     
 };
@@ -38,6 +38,6 @@ firebase.auth().signInWithEmailAndPassword(email, senha)
   .then(response => {
     window.location.href = "../index.html";
   }).catch(erro => {
-    alert(error.code);
+    alert("Senha ou email Inválidos");
   });
 };
