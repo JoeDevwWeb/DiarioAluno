@@ -69,10 +69,11 @@
 }
 /*--------------------------User name*/
 .barraferramentas .perfil p{
-    background: cyan;
+    background: rgba(177, 201, 201, 0.479);
     font-weight: bolder;
-    padding: 0 30px;
+    padding: 5px 30px;
     border-radius: 10px;
+    color: white;
   }
 .barraferramentas .perfil img{
     width: 8rem;

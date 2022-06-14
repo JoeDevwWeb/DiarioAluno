@@ -22,7 +22,7 @@ firebase.auth().createUserWithEmailAndPassword(email, senha)
 .then(() => {
   window.location.href = "../index.html";
 }).catch((error) => {
-  alert("Não foi possivel efetuar", error);
+  alert(error);
 });
     
 };
