@@ -23,23 +23,33 @@ $(document).ready(function(){
   
       transactions.forEach(transaction => {
           const li = document.createElement('li');
-  
-          const divFoto = document.createAttribute('div');
 
+        //   Div principal
           const titulo = document.createElement('div');
-          titulo.classList.add("data");
-          
-          titulo.innerHTML = transaction.titulo;
+          titulo.classList.add("projetos");
           li.appendChild(titulo);
+
+        // div da foto do projeto
+          const divfoto = document.createElement('div');
+          divfoto.classList.add("imgProjeto");
+          titulo.appendChild(divfoto);
+
+
+          const divtexto = document.createElement('div');
+          divtexto.classList.add("TextProjeto");
+          titulo.appendChild(divtexto);
 
           const img = document.createElement('img');
           img.src = transaction.url;
-          titulo.appendChild(img);
+          divfoto.appendChild(img);
 
-  
+          const texto = document.createElement('h2');
+          texto.innerHTML =  transaction.titulo;
+          divtexto.appendChild(texto);
+
           const type = document.createElement('p');
           type.innerHTML = transaction.transactionType;
-          titulo.appendChild(type);
+          divtexto.appendChild(type);
   
   
           orderedList.appendChild(li);
@@ -47,23 +57,32 @@ $(document).ready(function(){
   }
   
   const fakeTransactions = [{
-      titulo: 'Projeto de robotica',
-      url: '../imagens/perfil.jpg',
-      transactionType: 'Supermercado'
+        titulo: 'Projeto de robotica',
+        url: '../imagens/perfil.jpg',
+        transactionType: 'falando sobre'
   }, {
-      date: '2022-01-03',
-      url: '../imagens/perfil.jpg',
-      transactionType: 'Salário',
-      description: 'Empresa A'
+        titulo: 'Projeto de robotica',
+        url: '../imagens/perfil.jpg',
+        transactionType: 'Supermercado'
   }, {
-      date: '2022-01-01',
-      url: '../imagens/perfil.jpg',
-      transactionType: 'Transporte',
-      description: "Metrô ida e volta"
+        titulo: 'Projeto de robotica',
+        url: '../imagens/perfil.jpg',
+        transactionType: 'Supermercado'
   }, {
-      date: '2022-01-01',
-      url: '../imagens/perfil.jpg',
-      transactionType: 'Aluguel',
-      description: "Mensalidade"
+        titulo: 'Projeto de robotica',
+        url: '../imagens/perfil.jpg',
+        transactionType: 'Supermercado'
   }]
+
+  addUserToScreen();
+
+  
+  function addUserToScreen() {
+          const nomeUser = ("Marcos");
+          const User = document.getElementById('userName')
+          User.innerHTML = (nomeUser);
+         
+  }
+  
+  
 

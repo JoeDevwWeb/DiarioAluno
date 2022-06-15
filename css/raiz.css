@@ -68,14 +68,14 @@
     gap: 10px;
 }
 /*--------------------------User name*/
-.barraferramentas .perfil p{
+.barraferramentas .perfilNome p{
     background: rgba(177, 201, 201, 0.479);
     font-weight: bolder;
     padding: 5px 30px;
     border-radius: 10px;
     color: white;
   }
-.barraferramentas .perfil img{
+.barraferramentas .perfilNome img{
     width: 8rem;
     border: 2px solid black;
     border-radius: 50%;
@@ -177,9 +177,19 @@
 
 
 /*Guia*/
-.data{
-    background: #90cadd;
+
+.projetos{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 10px;
 }
+
+.imgProjeto img{
+    width: 15rem;
+    height: 15rem;
+}
+
 ol {
     list-style-type: none;
     padding: 0;
@@ -193,12 +203,6 @@ ol li {
 ol li:hover {
     opacity: 0.8;
 }
-ol li.expense {
-    border-left: 10px solid red;
-}
-ol li.income {
-    border-left: 10px solid green;
-} 
 p {
     margin: 4px 0;
 }
